@@ -133,7 +133,7 @@ class upload_class {
 			$upload_file['name'] = $this -> _file['name'];
 			$upload_file['path'] = $target_dir['path'] . "/";
 			
-			return array("message" => "{$this->_file['name']} uploaded sucessfully.", "error" => false, 'file' => $upload_file);
+			return array("message" => "{$this->_file['name']} uploaded sucessfully.", "error" => false, 'file' => $upload_file, 'path'=>$upload_file['path']);
 			
 		}
 	}
